@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.black{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    background-color: rgba(0,0,0,0.9)
+}
+.body{
+    background-image: url(../images/genuis.jpg);
+    background-color: #262626;
+    animation: slide-bg linear infinite 10s;
+}
+@keyframes slide-bg{
+    0%{
+        background-image: url(../images/racine.jpg);
+    }
+    25%{
+        background-image: url(../images/cpChris.jpg)
+    }
+    70%{
+        background-image: url(../images/gt.jpg)
+    }
+    100%{
+        background-image: url(../images/group.jpg)
+    }
+}
+header{
+    width: 100%;
+    background-color: #ccc;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+header h1,
+header h2,
+header h3,
+header h4,
+header h5{
+    font-family: calibri !important;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #666;
+    display: block;
+    position: relative;
+}
+.menu-toggle{
+    color: #fff;
+    float: right;
+    /* background-color: #cc0; */
+    margin: 2px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+.menu-toggle label{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+}
+@media(max-width: 990px){
+    .menu-toggle{display: block;}
+    .nav-ul{
+        position: fixed;
+        top: 83px;
+        margin-left: -50%;
+        z-index: 2;
+        display: block;
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .nav-ul li{
+        display: block;
+        width: 100%;
+    }
+    .nav-ul li a{
+        display: block;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+    }
+}
+.activeN{
+    margin-left: 0
+}
+.logo{
+    position: relative;
+    font-weight: 600;
+    background: #777;
+    float: left;
+    padding: 16px;
+    display: block;
+}
+.logo a{
+    color: #666;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-ul{
+    float: right;
+    list-style: none;
+    padding-top: 15px;
+    padding-right: 1%;
+}
+.nav-ul li{
+    display: flex;
+    float: left;
+}
+.nav-ul li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ccc;
+    font-family: calibri !important;
+    transition: ease-in-out 0.3s
+}
+.nav-ul a:hover,
+.active{
+    background-color: coral !important;
+    box-shadow: 0 5px 0 #ccc;
+    color: #fff
+}
+.container{
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255,.5);
+    float: inline-start;
+}
+.container .news{
+    flex: wrap;
+    position: relative;
+    /* width: 33.3%; */
+
+    padding: 5px;
+    margin: 5px;
+    overflow: hidden;
+    background-color: rgba(33,121,21,0.5);
+}
+.container .news h2,.container .news h1,.container .news h3,.container .news h4,.container .news h6{
+    text-align: center;
+    color: #fff;
+    background-color: coral
+}
+.container .news p{
+    text-align: justify;
+    font-family: calibri !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.container .news img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transition: ease-in-out 0.5s;
+}
+
+.container .news img:hover{
+    transform: scale(1.2);
+}
+@media(max-width: 990px){
+    .container{position: relative;width: 100%;display: block;margin: 0 auto}
+    .container .news{display: block;width: 100%;position: relative;margin:0}
+    .container .news h3{padding: 10px}
+    .container .news p{font-size: 18px;font-weight: 300;}
+    .container .news img{
+        width: 900px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+.header{
+    padding: 5px;
+    background: linear-gradient(40deg, #ccc, coral)
+}
+.header #author{
+    color: teal;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+}
+#title{
+    position: relative;
+    display: block;vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    width: 100%
+}
+#time{
+    color: rgba(0,21,0,0.5);
+    font-size: .5rem;
+    font-weight: 600;
+}
